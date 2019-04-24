@@ -2,6 +2,7 @@
 var express = require("express");
 var handlebars = require('express-handlebars');
 var logger = require("morgan");
+var mongoose = require("mongoose");
 
 // Initialize Express
 var app = express();
