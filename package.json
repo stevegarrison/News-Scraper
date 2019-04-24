@@ -2,9 +2,9 @@
   "name": "news-scraper",
   "version": "1.0.0",
   "description": "homework 13",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,5 @@
     "mongojs": "^2.6.0",
     "mongoose": "^5.5.3",
     "morgan": "^1.9.1"
-  },
-  "scripts": {
-    "start": "node server.js"
   }
 }
