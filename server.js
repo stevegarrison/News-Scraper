@@ -7,6 +7,8 @@ var mongoose = require("mongoose");
 // Initialize Express
 var app = express();
 
+var port = process.env.PORT || 3000;
+
 // Use morgan logger for logging requests
 app.use(logger("dev"));
 
@@ -26,6 +28,6 @@ mongoose.connect(MONGODB_URI);
 
 
 // Listen on port 3000
-app.listen(3000, function () {
-    console.log("App running on port 3000!");
+app.listen(port, function () {
+    console.log("App running on port " + port);
 });
